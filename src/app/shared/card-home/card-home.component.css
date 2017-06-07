@@ -1,0 +1,17 @@
+.card-image {
+    margin-top: -30px;
+}
+
+.card-title {
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+p {
+    height: 100px;
+}
+
+.retira {
+    text-decoration: none;
+}

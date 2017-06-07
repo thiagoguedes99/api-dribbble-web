@@ -1,0 +1,26 @@
+<br>
+<br>
+
+<div *ngIf="show">
+    <div *ngFor="let item of listShotsView">
+
+        <div class="container">
+            <div class="justify-content-center">
+                <div class="col-10 col-sm-8 col-md-4 float-left">
+
+                    <card-home [shot]="item"></card-home>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row col-12 align-items-center justify-content-center">
+        <paginacao class="text-center" [totalRegistros]="listShots.length" [qtdPorPagina]="qtdPorPagina" (onPaginate)="paginar($event)">
+        </paginacao>
+    </div>
+
+</div>
+
+<loading [show]="show"></loading>

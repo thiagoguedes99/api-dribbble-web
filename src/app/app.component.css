@@ -1,0 +1,22 @@
+.slider {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.teste {
+    width: 30px;
+    height: 30px;
+}
+
+.sticky-nav-wrapper {
+    min-height: 50px;
+}
+
+.sticky-nav {
+    height: 50px;
+}
+
+.sticky-box-shadow {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}

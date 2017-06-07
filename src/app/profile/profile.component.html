@@ -1,0 +1,37 @@
+<div *ngIf="show">
+
+    <div class="container">
+        <div class="justify-content-center">
+            <div class="col-10 col-sm-8 col-md-4 float-left">
+
+                <personal-card [profile]="userProfile"></personal-card>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- /div -->
+
+    <!-- div *ngIf="show" -->
+    <div *ngFor="let item of userShotsView">
+
+        <div class="container">
+            <div class="justify-content-center">
+                <div class="col-10 col-sm-8 col-md-4 float-left">
+
+                    <simple-card [shots]="item"></simple-card>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /div -->
+
+    <div class="row col-12 align-items-center justify-content-center">
+        <paginacao class="text-center" [totalRegistros]="userShots.length" [qtdPorPagina]="qtdPorPagina" (onPaginate)="paginar($event)">
+        </paginacao>
+    </div>
+</div>
+
+<loading [show]="show"></loading>

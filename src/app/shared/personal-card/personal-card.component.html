@@ -1,0 +1,20 @@
+<div class="card card-blog">
+    <img class="card-image" src="{{profile?.avatar_url}}" alt="Card image cap">
+    <div class="card-block">
+        <h4 class="card-title text-center">{{profile?.name}}</h4>
+        <p class="locality card-text text-center">{{profile?.location}}</p>
+        <p class="card-text profission text-center">{{profile?.bio}}</p>
+
+        <a href="{{profile?.links?.web}}" target="_blank" *ngIf="profile?.links?.web">
+            <div class="row margin-row-www">
+                <avatar [photo]="'src/app/image/site.png'" [name]="'web site'"></avatar>
+            </div>
+        </a>
+
+        <a href="{{profile?.links?.twitter}}" target="_blank" *ngIf="profile?.links?.twitter">
+            <div class="row">
+                <avatar [photo]="'src/app/image/twitter.png'" [name]="'twitter'"></avatar>
+            </div>
+        </a>
+    </div>
+</div>

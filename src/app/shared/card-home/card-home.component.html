@@ -1,0 +1,24 @@
+<div class="card card-blog">
+    <div [routerLink]="['/detail', shot.id ]" class="retira">
+        <img class="card-image" src="{{shot.images.hidpi}}" alt="Card image cap">
+    </div>
+    <div class="card-block">
+        <h4 class="card-title">{{shot.title}}</h4>
+        <p class="card-text">{{shot.description}}</p>
+
+        <div>
+            <a [routerLink]="['/profile', shot.user.id ]">
+                <avatar [photo]="shot.user.avatar_url" [name]="shot.user.name"></avatar>
+            </a>
+
+            <div class="stats ">
+                <i class="fa fa-eye "></i> {{shot.views_count }}
+                <i class="fa fa-comment ml-2 "></i> {{shot.comments_count }}
+                <i class="fa fa-heart ml-2 "></i> {{shot.likes_count }}
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

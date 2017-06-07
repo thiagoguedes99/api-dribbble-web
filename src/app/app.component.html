@@ -1,0 +1,34 @@
+<section class="slider container-fluid d-flex align-items-center justify-content-center">
+
+    <img src="src/app/image/foto.jpg" class="col-4" alt="Thiago Guedes">
+    <img src="src/app/image/capa-do-livro.jpg" class="col-5 offset-2" alt="Angular">
+
+</section>
+
+<div class="sticky-nav-wrapper">
+    <nav class="navbar sticky-top navbar-toggleable-sm navbar-inverse bg-inverse sticky-nav" ngStickyNav stickyClass="sticky-box-shadow">
+        <a class=" navbar-brand" href="index.html ">
+            <img src="src/app/image/Dribbble-ball-ico.png" class="d-inline-block align-top teste" alt="logo"> Dribbble
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mr-auto ml-auto text-center ">
+                <a class="nav-item nav-link active " href="# ">Home <span class="sr-only ">(current)</span></a>
+                <a class="nav-item nav-link" target="_blank" href="https://www.casadocodigo.com.br/products/livro-angular">Livros</a>
+                <a class="nav-item nav-link" target="_blank" href="https://github.com/thiagoguedes99 ">GitHub</a>
+                <a class="nav-item nav-link" target="_blank" href="https://www.linkedin.com/in/thiago-guedes-7b0688100/">Linkedin</a>
+                <a class="nav-item nav-link" href="# ">About Me</a>
+            </div>
+            <!-- div class="d-flex flex-row justify-content-center">
+            <a class="btn btn-outline-primary mr-2" href="#">F</a>
+            <a class="btn btn-outline-danger" href="#">Y</a>
+        </div -->
+        </div>
+    </nav>
+</div>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

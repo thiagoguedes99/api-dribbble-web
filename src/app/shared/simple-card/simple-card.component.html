@@ -1,0 +1,14 @@
+<div class="card card-blog">
+    <div [routerLink]="['/detail', shots.id ]">
+        <img class="card-image" src="{{shots.images.hidpi}}" alt="Card image cap">
+    </div>
+    <div class="card-block">
+
+        <div class="stats col-12">
+            <i class="fa fa-eye"></i> {{shots.views_count}}
+            <i class="fa fa-comment ml-2"></i> {{shots.comments_count}}
+            <i class="fa fa-heart ml-2"></i> {{shots.likes_count}}
+        </div>
+
+    </div>
+</div>

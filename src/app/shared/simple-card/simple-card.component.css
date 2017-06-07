@@ -1,0 +1,24 @@
+.card {
+    padding-top: 15px;
+}
+
+.card-block {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+}
+
+.card-title {
+    height: 50px;
+    overflow: hidden;
+}
+
+p {
+    height: 100px;
+}
+
+.stats {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px
+}

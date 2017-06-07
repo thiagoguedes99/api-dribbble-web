@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <div [routerLink]="['/profile', user?.id ]">
+                <img src="{{user?.avatar_url}}}" class="foto" alt="">
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6">
+            <h4 class="card-title">{{user?.name}}</h4>
+            <p class="locality">{{user?.location}} <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+
+            <a href="{{user?.links?.web}}" target="_blank" *ngIf="user?.links?.web">
+                <!-- *ngIf="user?.links?.web" -->
+                <div class="row margin-row-www">
+                    <!-- img src="src/assets/image/site.png" class="avatar img-raised">
+                    <span class="text-vertical-center">web site</span -->
+                    <avatar [photo]="'src/app/image/site.png'" [name]="'web site'"></avatar>
+                </div>
+            </a>
+
+            <a href="{{user?.links?.twitter}}" target="_blank" *ngIf="user?.links?.twitter">
+                <!--  *ngIf="user?.links?.twitter" -->
+                <div class="row">
+                    <!-- img src="src/assets/image/twitter.png" class="avatar img-raised">
+                    <span class="text-vertical-center">twitter</span -->
+                    <avatar [photo]="'src/app/image/twitter.png'" [name]="'twitter'"></avatar>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
