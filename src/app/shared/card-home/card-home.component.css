@@ -2,6 +2,10 @@
     margin-top: -30px;
 }
 
+.card {
+    height: auto;
+}
+
 .card-title {
     height: 50px;
     overflow: hidden;
