@@ -44,7 +44,6 @@ export class ProfileComponent implements OnInit {
   paginar($event: any) {
 		this.pagina = $event - 1;
 		this.userShotsView = this.paginarService.listar(this.pagina, this.qtdPorPagina, this.userShots);
-    this.paginarService.log("profile component");
 	}
 
 }

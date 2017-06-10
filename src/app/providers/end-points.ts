@@ -1,3 +1,5 @@
+import { User } from "app/model/user";
+
 export class EndPoints {
 
     private readonly ACCESS_TOKEN: string = '87440f9d56702340edee57ee1e33a698a26b8ef8925803040368f3ca52e3ed81';
@@ -37,5 +39,12 @@ export class EndPoints {
     protected getShotsLikes(idComents: string): string {
         return `${this.URL}shots/${idComents}/likes${this.getAccessToken()}`;
     }
+
+
+  protected loginsValidos: User [] = [
+    {nome: 'root', senha: '123', level: 'full'},
+    {nome: 'thiago', senha: '456', level: 'read'}
+  ];
+
 
 }

@@ -1,0 +1,44 @@
+<div class="card mt-5">
+    <h3 class="mt-4">Bem vindo!</h3>
+    <h5>Por favor, digite o seu usuário e senha.</h5>
+
+    <hr>
+
+    <div class="log">
+        <div class="row">
+            <div class="max">
+                <div class="form-group">
+                    <input [(ngModel)]="usuario.nome" value="" id="nome" type="text" class="validate form-control" placeholder="Username">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="max">
+                <div class="form-group">
+                    <input [(ngModel)]="usuario.senha" value="" id="senha" type="password" class="validate form-control" placeholder="password ">
+                </div>
+            </div>
+        </div>
+
+        <button (click)="login()" class="btn btn-success max mb-3" type="submit" name="action">Login
+           <i class="material-icons right "></i>
+        </button>
+
+        <div class="row">
+            <div class="d-flex mr-auto mb-5 log-user">Esqueceu sua senha?</div>
+            <div class="log-user">Registrar uma nova conta!</div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h3>ATENÇÃO:</h3>
+    <h5>Contas</h5>
+    <p>
+        <strong>Username</strong>: root , <strong>password</strong>: 123
+    </p>
+    <p>
+        <strong>Username</strong>: thiago , <strong>password</strong>: 456
+    </p>
+</div>

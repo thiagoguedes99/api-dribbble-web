@@ -11,14 +11,15 @@ import { AppRoutingModule } from "app/app.routing.module";
 import { StickyNavModule } from 'ng2-sticky-nav';
 
 // my components of view
-import { HomeComponent } from './home/home.component';
-import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 import { CardHomeComponent } from './shared/card-home/card-home.component';
+import { LoginComponent } from './pages/login/login.component';
 
 // my components generics
 import { PersonalCardComponent } from './shared/personal-card/personal-card.component';
 import { SimpleCardComponent } from './shared/simple-card/simple-card.component';
-import { DetailShotsComponent } from './detail-shots/detail-shots.component';
+import { DetailShotsComponent } from './pages/detail-shots/detail-shots.component';
 import { SimpleImageComponent } from './shared/simple-image/simple-image.component';
 import { PersonalCardHorizontalComponent } from "./shared/personal-card-horizontal/personal-card-horizontal.component";
 
@@ -43,7 +44,8 @@ import { PaginacaoComponent } from './shared/paginacao/paginacao.component';
     CollapseCardComponent,
     AvatarComponent,
     LoadingComponent,
-    PaginacaoComponent
+    PaginacaoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
