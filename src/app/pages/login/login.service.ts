@@ -8,8 +8,10 @@ export class LoginService {
   constructor(private service: DribbbleServiceService) { }
 
   autenticar(usuario: User): boolean {
-    if (this.service.getAutenticacao(usuario)) {
-      sessionStorage.setItem('userLogged', 'true');
+    let sec = this.service.getAutenticacao(usuario);
+
+    if (sec) {
+      sessionStorage.setItem('userLogged', 'on');
 
       return true
     } else {
@@ -17,8 +19,9 @@ export class LoginService {
     }
   }
 
+
   logOff() {
-    sessionStorage.setItem('userLogged', 'false');
+    sessionStorage.setItem('userLogged', 'off');
   }
 
 }

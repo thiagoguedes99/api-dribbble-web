@@ -11,15 +11,13 @@ export class AuthGuard implements CanActivate {
   canActivate(next: ActivatedRouteSnapshot,
               state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
 
-    
-    if(Boolean(sessionStorage.getItem('userLogged'))) {
-      alert('rota true');
+    let sec: string = sessionStorage.getItem('userLogged');
+
+    if(sec == 'on') {
       return true;      
     }
     else{
       this.rota.navigate(['/login']);
-      alert('rota false');
-      
       return false;
     }
   }

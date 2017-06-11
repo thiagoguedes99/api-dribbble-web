@@ -11,7 +11,7 @@ import { LoginService } from "app/pages/login/login.service";
 })
 export class LoginComponent implements OnInit {
 
-  resp: boolean = false;
+  errorLogin: boolean = false;
 
   usuario: User = new User();
 
@@ -22,13 +22,13 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    this.resp =  this.logar.autenticar(this.usuario);
+    let resp =  this.logar.autenticar(this.usuario);
 
-    if(this.resp) {
+    if(resp) {
       this.rota.navigate(['/']);
     }
     else {
-alert('não logoou');
+      this.errorLogin = true;
     }
   }
 
