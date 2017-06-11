@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 import { User } from "app/model/user";
-import { Router } from "@angular/router";
 import { LoginService } from "app/pages/login/login.service";
 
 @Component({
@@ -15,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   usuario: User = new User();
 
-  constructor(private logar: LoginService, private rota: Router) { }
+  constructor(private logar: LoginService) { }
 
   ngOnInit() {
     this.logar.logOff();
@@ -25,7 +24,7 @@ export class LoginComponent implements OnInit {
     let resp =  this.logar.autenticar(this.usuario);
 
     if(resp) {
-      this.rota.navigate(['/']);
+      
     }
     else {
       this.errorLogin = true;

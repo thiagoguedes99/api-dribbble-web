@@ -30,6 +30,9 @@ import { AvatarComponent } from './shared/avatar/avatar.component';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { PaginacaoComponent } from './shared/paginacao/paginacao.component';
 import { AuthGuard } from "app/guards/auth.guard";
+import { LoginService } from "app/pages/login/login.service";
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import { AuthGuard } from "app/guards/auth.guard";
     AvatarComponent,
     LoadingComponent,
     PaginacaoComponent,
-    LoginComponent
+    LoginComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

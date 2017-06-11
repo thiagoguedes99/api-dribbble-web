@@ -4,6 +4,7 @@
 @import '~font-awesome/css/font-awesome.min.css';
 .card {
     margin-bottom: 80px;
+    -moz-margin-bottom: 80px;
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px;
@@ -25,24 +26,6 @@
 .ftr {
     margin-top: 15px;
 }
-
-
-/*.author {
-    color: #888;
-}
-
-.avatar {
-    width: 36px;
-    height: 36px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-right: 5px;
-    color: #888;
-}
-
-.img-raised {
-    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-}*/
 
 .stats {
     float: right;

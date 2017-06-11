@@ -12,21 +12,18 @@ import { CollapseCardComponent } from "app/shared/collapse-card/collapse-card.co
 import { AvatarComponent } from "app/shared/avatar/avatar.component";
 import { LoginComponent } from "app/pages/login/login.component";
 import { AuthGuard } from "app/guards/auth.guard";
+import { NotFoundComponent } from "app/pages/not-found/not-found.component";
 
 
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'home' },
     { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+    {path: 'login', component: LoginComponent},
+    {path: 'about', loadChildren: 'app/pages/about/about.module#AboutModule'},
     {path: 'detail/:id', component: DetailShotsComponent},
     {path: 'profile/:id', component: ProfileComponent},
-    { path: 'personal', component: PersonalCardComponent },
-    {path: 'simple', component: SimpleCardComponent},
-    {path: 'image', component: SimpleImageComponent},
-    {path: 'coments', component: PersonalCardHorizontalComponent},
-    {path: 'colla', component: CollapseCardComponent},
-    {path: 'avatar', component: AvatarComponent},
-    {path: 'login', component: LoginComponent}];
+    {path: '**', component: NotFoundComponent}];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
