@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    if (this.service.getUserLogged()) {
+    //if (this.service.getUserLogged()) {
       this.pagina = 1;
       this.service.getListShot()
                   .subscribe(resp =>{
@@ -33,9 +33,9 @@ export class HomeComponent implements OnInit {
                     this.paginar(this.pagina);
                   });
         
-    } else {
-      this.rota.navigate(['/login']);
-    }
+    //} else {
+      //this.rota.navigate(['/login']);
+    //}
   }
 
   paginar($event: any) {

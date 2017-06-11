@@ -29,6 +29,7 @@ import { CollapseCardComponent } from './shared/collapse-card/collapse-card.comp
 import { AvatarComponent } from './shared/avatar/avatar.component';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { PaginacaoComponent } from './shared/paginacao/paginacao.component';
+import { AuthGuard } from "app/guards/auth.guard";
 
 @NgModule({
   declarations: [
@@ -56,7 +57,7 @@ import { PaginacaoComponent } from './shared/paginacao/paginacao.component';
 
     AppRoutingModule,
   ],
-  providers: [DribbbleServiceService],
+  providers: [DribbbleServiceService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

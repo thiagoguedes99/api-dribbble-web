@@ -11,12 +11,13 @@ import { DetailShotsComponent } from "app/pages/detail-shots/detail-shots.compon
 import { CollapseCardComponent } from "app/shared/collapse-card/collapse-card.component";
 import { AvatarComponent } from "app/shared/avatar/avatar.component";
 import { LoginComponent } from "app/pages/login/login.component";
+import { AuthGuard } from "app/guards/auth.guard";
 
 
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'home' },
-    { path: 'home', component: HomeComponent },
+    { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
     {path: 'detail/:id', component: DetailShotsComponent},
     {path: 'profile/:id', component: ProfileComponent},
     { path: 'personal', component: PersonalCardComponent },

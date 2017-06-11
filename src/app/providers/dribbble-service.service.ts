@@ -56,10 +56,6 @@ export class DribbbleServiceService extends EndPoints {
     return validacao;
   }
 
-  getUserLogged(): boolean {
-    let logged: boolean = Boolean(sessionStorage.getItem('userLogged'));
-
-    return logged;
-  }
+  
   
 }

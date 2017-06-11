@@ -21,3 +21,9 @@ hr {
 .log-user {
     color: dodgerblue;
 }
+
+.error {
+    color: red;
+    width: 100%;
+    align-items: center;
+}
