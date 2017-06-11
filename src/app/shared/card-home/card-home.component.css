@@ -18,4 +18,5 @@ p {
 
 .retira {
     text-decoration: none;
+    cursor: pointer;
 }
