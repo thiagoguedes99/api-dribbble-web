@@ -1,5 +1,5 @@
 <div id="accordion" role="tablist" aria-multiselectable="true">
-
+    <!--div class="col-12" -->
     <div class="card">
         <div class="card-header" role="tab" id="headingOne">
             <h5 class="mb-0">
@@ -11,11 +11,9 @@
 
         <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="card-block">
-                <!--{{coments | json}}-->
                 <table class="table table-hover">
                     <tbody>
                         <tr *ngFor="let item of coments; index as i">
-                            <!-- *ngFor="let item of items" -->
                             <th scope="row">{{i+1}}</th>
                             <td>
                                 <a [routerLink]="['/profile', item.user.id ]">
@@ -45,15 +43,12 @@
                 <table class="table table-hover">
                     <tbody>
                         <tr *ngFor="let item of likes; index as i">
-                            <!-- *ngFor="let item of items" -->
                             <th scope="row">{{i}}</th>
                             <td>
                                 <a [routerLink]="['/profile', item.user.id ]">
                                     <avatar [photo]="item.user.avatar_url" [name]="item.user.name"></avatar>
                                 </a>
                             </td>
-                            <!-- td class="align-items-center justify-content-center">{{item.user.bio}}</td>
-                            <td>@mdo</td -->
                         </tr>
                     </tbody>
                 </table>
@@ -61,5 +56,7 @@
             </div>
         </div>
     </div>
+
+    <!--/div -->
 
 </div>
