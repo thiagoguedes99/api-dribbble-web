@@ -2,7 +2,7 @@
 
     <div class="container">
         <div class="justify-content-center">
-            <div class="col-10 col-sm-8 col-md-4 float-left">
+            <div class="col-10 col-sm-8 col-md-4 ml-sm-5 mr-sm-5 float-left">
 
                 <personal-card [profile]="userProfile"></personal-card>
 
@@ -16,8 +16,8 @@
     <div *ngFor="let item of userShotsView">
 
         <div class="container">
-            <div class="justify-content-center">
-                <div class="col-10 col-sm-8 col-md-4 float-left">
+            <div class="justify-content-center ml-sm-5 mr-sm-5">
+                <div class="col-10 col-sm-6 col-md-3 float-left">
 
                     <simple-card [shots]="item"></simple-card>
 
