@@ -26,14 +26,10 @@ export class DetailShotsComponent implements OnInit {
       this.show = true});
 
     this.service.getComentsShots(this.id).subscribe(res => {
-      this.coments = res;
-    console.log(this.coments)});
+      this.coments = res;});
 
     this.service.getLikeShots(this.id).subscribe(res => {
-      this.likes = res;
-    console.log(this.likes)});
-
+      this.likes = res;});
   }
-
 
 }
