@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute } from '@angular/router';
 
-import { DribbbleServiceService } from "app/providers/dribbble-service.service";
-import { PaginarService } from "app/shared/paginacao/paginar.service";
+import { DribbbleServiceService } from 'app/providers/dribbble-service.service';
+import { PaginarService } from 'app/shared/paginacao/paginar.service';
 
 @Component({
   selector: 'app-profile',

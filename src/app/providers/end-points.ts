@@ -1,4 +1,4 @@
-import { User } from "app/model/user";
+import { User } from 'app/model/user';
 
 export class EndPoints {
 

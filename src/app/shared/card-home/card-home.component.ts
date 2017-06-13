@@ -1,5 +1,5 @@
 import { Component, OnInit, OnChanges, Input, SimpleChanges } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'card-home',

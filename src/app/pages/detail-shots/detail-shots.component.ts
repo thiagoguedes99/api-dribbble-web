@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute } from '@angular/router';
 
-import { DribbbleServiceService } from "app/providers/dribbble-service.service";
+import { DribbbleServiceService } from 'app/providers/dribbble-service.service';
 
 @Component({
   selector: 'app-detail-shots',

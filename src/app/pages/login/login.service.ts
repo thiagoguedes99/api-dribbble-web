@@ -1,7 +1,7 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import { DribbbleServiceService } from "app/providers/dribbble-service.service";
-import { User } from "app/model/user";
-import { Router } from "@angular/router";
+import { DribbbleServiceService } from 'app/providers/dribbble-service.service';
+import { User } from 'app/model/user';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class LoginService {

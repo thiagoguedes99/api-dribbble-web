@@ -4,8 +4,8 @@ import { Observable } from 'rxjs/Rx';
 import { ErrorObservable } from 'rxjs/observable/ErrorObservable';
 import 'rxjs/add/operator/map';
 
-import { EndPoints } from "app/providers/end-points";
-import { User } from "app/model/user";
+import { EndPoints } from 'app/providers/end-points';
+import { User } from 'app/model/user';
 
 @Injectable()
 export class DribbbleServiceService extends EndPoints {

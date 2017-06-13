@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DribbbleServiceService } from "app/providers/dribbble-service.service";
-import { PaginarService } from "app/shared/paginacao/paginar.service";
-import { Router } from "@angular/router";
+import { DribbbleServiceService } from 'app/providers/dribbble-service.service';
+import { PaginarService } from 'app/shared/paginacao/paginar.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'homePage',
