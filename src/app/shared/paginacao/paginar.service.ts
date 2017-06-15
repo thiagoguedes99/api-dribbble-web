@@ -11,7 +11,7 @@ export class PaginarService {
 
     for (let i = ( pagina * qtdPorPagina ); i < (pagina * qtdPorPagina + qtdPorPagina); i++) {
       if (i >= listaTotal.length) {
-        break;        
+        break;
       }
       listaParcial.push(listaTotal[i]);
     }

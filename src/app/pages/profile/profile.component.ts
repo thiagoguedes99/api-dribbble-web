@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
   private id: string;
   public userProfile: any;
   public userShots: any[] = [];
-  public userShotsView: any
+  public userShotsView: any;
   public show: boolean = false;
 
   private readonly qtdPorPagina: number = 4;
@@ -26,7 +26,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.pagina = 1;
     this.id = this.url.snapshot.params['id'];
-    
+
     this.service.getUserProfile(this.id).subscribe(resp => this.userProfile = resp);
     this.service.getUserShots(this.id).subscribe(resp => {
                                       this.userShots = resp;
@@ -34,16 +34,15 @@ export class ProfileComponent implements OnInit {
                                       this.paginar(this.pagina);
                                     });
 
-    
   }
 
   showComponents() {
-    this.show = true;    
+    this.show = true;
   }
 
   paginar($event: any) {
-		this.pagina = $event - 1;
-		this.userShotsView = this.paginarService.listar(this.pagina, this.qtdPorPagina, this.userShots);
+    this.pagina = $event - 1;
+    this.userShotsView = this.paginarService.listar(this.pagina, this.qtdPorPagina, this.userShots);
 	}
 
 }

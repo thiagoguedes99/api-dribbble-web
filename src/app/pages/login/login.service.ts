@@ -19,9 +19,9 @@ export class LoginService {
       this.enviarValidacao.emit('on');
       this.rota.navigate(['/']);
 
-      return true
+      return true;
     } else {
-      return false;      
+      return false;
     }
   }
 

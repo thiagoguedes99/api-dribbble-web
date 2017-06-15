@@ -5,7 +5,7 @@ import { PaginarService } from 'app/shared/paginacao/paginar.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'homePage',
+  selector: 'home-page',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   providers: [PaginarService]
@@ -34,8 +34,8 @@ export class HomeComponent implements OnInit {
   }
 
   paginar($event: any) {
-		this.pagina = $event - 1;
-		this.listShotsView = this.paginarService.listar(this.pagina, this.qtdPorPagina, this.listShots);
-	}
+    this.pagina = $event - 1;
+    this.listShotsView = this.paginarService.listar(this.pagina, this.qtdPorPagina, this.listShots);
+  }
 
 }

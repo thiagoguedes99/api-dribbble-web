@@ -11,7 +11,7 @@ import { LoginService } from 'app/pages/login/login.service';
 export class AppComponent implements OnInit {
 
   mostraMenu: boolean = true;
-    
+
   constructor(private service: DribbbleServiceService, private login: LoginService) {}
 
   ngOnInit(): void {
